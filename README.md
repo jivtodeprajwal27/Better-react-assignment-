@@ -69,7 +69,14 @@ Follow these steps to run the project locally:
 - Links provided to switch seamlessly between the **Sign-Up** and **Login** forms.
 
 ---
+## Some Snippets
+### Login Page
+![image](https://github.com/user-attachments/assets/b99657fa-3b41-44b3-a2e1-81a7b8f7ace9)
+### SignUp Page
+![image](https://github.com/user-attachments/assets/ff2a9faa-4d75-45a8-a03f-5e61e9896db4)
 
+
+---
 ## **Assumptions and Limitations**
 ### **Assumptions**
 1. Users have a modern browser that supports local storage.
