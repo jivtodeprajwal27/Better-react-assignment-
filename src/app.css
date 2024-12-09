@@ -1,0 +1,118 @@
+/* General Styling */
+.form-container {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 320px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .input:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  .input-error {
+    border-color: red;
+  }
+  
+  .error-message {
+    font-size: 10px;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  /* Password Container */
+  .password-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-password {
+    font-size: 10px;
+    margin-left: 10px;
+    border: none;
+    background: none;
+    color: #6c63ff;
+    cursor: pointer;
+  }
+  
+  /* Password Requirements */
+  .password-requirements {
+    font-size: 10px;
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .password-requirements li {
+    margin-bottom: 3px;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background: #574bd7;
+  }
+  
+  /* Navigation Link */
+  .navigate-login {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #6c63ff;
+  }
+  
+  .navigate-login a {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .navigate-login a:hover {
+    text-decoration: underline;
+  }
+  
