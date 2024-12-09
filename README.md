@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+# **My Project**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**
+This project is a sign-up and login system built using React, TypeScript, and Formik with user credential validation. It demonstrates user-friendly interactions, local storage management, and navigation between signup and login pages.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Table of Contents**
+1. [How to Run the Project](#how-to-run-the-project)
+2. [Design Choices](#design-choices)
+3. [Assumptions and Limitations](#assumptions-and-limitations)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **How to Run the Project**
+Follow these steps to run the project locally:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### **Prerequisites**
+- Install **Node.js** (>=16.x) from [Node.js Official Website](https://nodejs.org/).
+- Install **npm** (comes with Node.js) or **yarn** (optional).
 
-### `npm test`
+### **Steps**
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/repository-name.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd repository-name
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+   or if using Yarn:
+   ```bash
+   yarn install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   or if using Yarn:
+   ```bash
+   yarn start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Open your browser and go to `http://localhost:3000`.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Design Choices**
+### **Technology Stack**
+- **React and TypeScript:** For building the user interface and ensuring type safety.
+- **Formik with Yup:** Simplifies form management and validation.
+- **CSS:** For styling the components without introducing external UI libraries.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **User Experience (UX)**
+1. **Password Visibility Toggle:**
+   - Provides a "Show Password" checkbox for better usability while typing passwords.
+2. **Real-Time Validation:**
+   - Displays password requirements dynamically as the user types.
+3. **Error Handling:**
+   - Ensures input fields retain their values if validation fails.
+4. **Local Storage Management:**
+   - Utilizes local storage for persistent user data across sessions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Navigation**
+- Links provided to switch seamlessly between the **Sign-Up** and **Login** forms.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Assumptions and Limitations**
+### **Assumptions**
+1. Users have a modern browser that supports local storage.
+2. Basic email format is used for validation purposes.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Limitations**
+1. **Local Storage:**
+   - User data is stored locally, making it less secure compared to server-side storage or a database.
+   - Data will not be shared across devices or browsers.
+2. **Validation:**
+   - Email validation checks for format only and does not confirm the existence of the email.
+3. **Password Strength Indicator:**
+   - Focuses on simple rules (length, uppercase, digits) and doesn't account for advanced security guidelines.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
